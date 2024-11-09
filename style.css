@@ -11,6 +11,10 @@ https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg
     margin: 0;
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
     color: white;
@@ -22,7 +26,8 @@ header > h1 {
     font-family: 'Passion One';
     font-weight: bold;
     text-justify: auto;
-    font-size: 1100%;
+    font-size: 10vw;
+    font-variant: small-caps;
 }
 
 header > p {
@@ -44,14 +49,8 @@ main {
     margin-top: 70px;
 }
 
-main p {
-    padding: 30px;
-    font-family: 'Sriracha';
-    font-size: 400%;
-    margin: 70px 0px;
-}
 
-div#paralax1 {
+section#paralax1 {
     background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,33 +61,31 @@ div#paralax1 {
     color: white;
 }
 
-div#paralax1 > p {
+section#paralax1 > p {
     background-color: rgba(0, 0, 0, 0.445);
-    width: 744px;
     margin-left: 30px;
-    height: 874px;
     padding: 6px 5px;
-    line-height: 125px;
+    font-family: 'Sriracha';
+    display: inline-block;
+
 }
 
-div#paralax2 {
+section#paralax2 {
     background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
     box-shadow: inset 2px 4px 20px 1px black;
     padding: 100px 100px 100px 0px;
     color: white;
 }
 
-div#paralax2 > p {
+section#paralax2 > p {
     background-color: rgba(0, 0, 0, 0.445);
-    width: 758px;
     margin-left: 30px;
-    height: 874px;
     padding: 6px 5px;
-    line-height: 125px;
+    font-family: 'Sriracha';
+    display: inline-block;
 }
 
 footer {
@@ -96,12 +93,35 @@ footer {
     text-align: center;
     color: white;
     padding: 10px;
-    font-size: 18px;
-    margin-top: 200px;
 }
 
 footer > p > a#github {
     text-decoration: none;
     font-weight: bold;
     color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+footer > p > a#github:hover {
+    background-color: rgb(53, 53, 53);
+    transition-duration: 0.3s;
+}
+
+section.normal {
+    padding: 30px;
+    font-family: 'Sriracha';
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: 'sriracha';
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
