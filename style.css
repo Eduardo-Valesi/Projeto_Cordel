@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+/*
+https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg
+https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg
+*/
+
+* {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+header > h1 {
+    font-family: 'Passion One';
+    font-weight: bold;
+    text-justify: auto;
+    font-size: 1100%;
+}
+
+header > p {
+    font-size: 120%;
+}
+
+header > p > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
+main {
+    margin-top: 70px;
+}
+
+main p {
+    padding: 30px;
+    font-family: 'Sriracha';
+    font-size: 400%;
+    margin: 70px 0px;
+}
+
+div#paralax1 {
+    background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    box-shadow: inset 2px 4px 20px 1px black;
+    padding: 100px 100px 100px 0px;
+    color: white;
+}
+
+div#paralax1 > p {
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 744px;
+    margin-left: 30px;
+    height: 874px;
+    padding: 6px 5px;
+    line-height: 125px;
+}
+
+div#paralax2 {
+    background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    box-shadow: inset 2px 4px 20px 1px black;
+    padding: 100px 100px 100px 0px;
+    color: white;
+}
+
+div#paralax2 > p {
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 758px;
+    margin-left: 30px;
+    height: 874px;
+    padding: 6px 5px;
+    line-height: 125px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 200px;
+}
+
+footer > p > a#github {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
